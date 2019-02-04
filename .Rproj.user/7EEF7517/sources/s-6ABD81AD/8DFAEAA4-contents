@@ -3,7 +3,7 @@ Type: Package
 Title: Performs Analysis On US NHTSA Fars Data 
 Version: 0.1.0
 Author: Mayank Vanani
-Imports: readr, dplyr, tidyr, magrittr
+Imports: readr, dplyr, tidyr, magrittr, maps, graphics
 Maintainer: Mayank Vanani <mkvanani@gmail.com>
 Description: It refactors the data into separate data files based on year and draws out map
               to point the accident location. This is maily for the purpose to demonstrate the workflow to 

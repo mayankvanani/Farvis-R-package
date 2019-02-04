@@ -1,5 +1,5 @@
-"0","plot(fars_summarize_years(2015))"
-"2","invalid year: 2015"
+"0","fars_summarize_years(2014)"
+"2","invalid year: 2014"
 "2","Error in grouped_df_impl(data, unname(vars), drop) : 
   Column `year` is unknown
 "

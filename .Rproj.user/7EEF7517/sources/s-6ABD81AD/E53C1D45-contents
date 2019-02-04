@@ -23,16 +23,16 @@ This package is build with reference to final assignment for <br/>
  <br/>
 
 ## Summary
-This vignette is concerned to explain the working of farviz package.
-It is mainly used to locate the points of accidents occurance on the map.
-
+This vignette is concerned to explain the working of farviz package.<br/>
+It is mainly used to locate the points of accidents occurance on the map.<br/>
+<br/>
 
 ## Dataset
 **US NHTSA Fars Data (Fatality Analysis Reporting System)**<br/>
-This data set has 
+This package has dataset in data/ subdirectory. <br/>
 
 
-## Load Packages
+## Loading Packages
 
 ```{r}
 library(farviz)
@@ -45,7 +45,7 @@ library(maps)
 Data files included within the package are:
 
 ```{r}
-list.files(system.file("data", package = "fars"))
+list.files(system.file("data", package = "farviz"))
 ```
 
 
@@ -62,20 +62,20 @@ make_filename(yr)
 
 ### Function `fars_read_years`
 
-Ancillary function used by `fars_summarize_years`
+Helping function used by `fars_summarize_years`
 
 ```{r}
-fars_read_years(2013)
+plot(fars_summarize_years(2015))
+fars_summarize_years(c(2015, 2014))
 ```
 
 
 ### Function `fars_summarize_years`
 
-This function summarizes yearly accidents data, by month.
+This function summarizes yearly accidents data,filtered by month.
 
 ```{r}
-plot(fars_summarize_years(2015))
-fars_summarize_years(c(2015, 2014))
+fars_summarize_years(2014)
 ```
 
 ### Function `fars_map_state`
@@ -88,9 +88,3 @@ state_num <- 49 # Utah
 yr <- 2014
 fars_map_state(state_num, yr)
 ```
-
-
-# Links:
-* [Package fars GitHub](https://github.com/EnriquePH/FARS)
-* [Package fars Travis CI](https://travis-ci.org/EnriquePH/FARS)
-* [Package Appveyor](https://ci.appveyor.com/project/EnriquePH/FARS)

@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1549303717036.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "AF1C2ADB",
+    "lastKnownWriteTime" : 1549304819,
+    "last_content_update" : 1549304819120,
+    "path" : "~/Desktop/farviz/tests/testthat.R",
+    "project_path" : "tests/testthat.R",
+    "properties" : {
+        "cursorPosition" : "11,0",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 6,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

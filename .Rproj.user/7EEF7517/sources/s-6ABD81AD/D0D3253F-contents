@@ -4,6 +4,7 @@
 #' then imports it to global environment by read it in .CSV format.
 #'
 #' @importFrom readr read_csv
+#' @importFrom dplyr tbl_df
 #'
 #' @param filename A character string specifying just the filename if it resides in current
 #'                 working directory, else,  specifying the absolute path to the file.
@@ -16,6 +17,7 @@
 #' fars_read("fars_data")
 #' fars_read("data/fars_data")
 #' @export
+
 fars_read <- function(filename) {
   if(!file.exists(filename))
     stop("file '", filename, "' does not exist")
@@ -41,9 +43,11 @@ fars_read <- function(filename) {
 #' @export
 make_filename <- function(year) {
   year <- as.integer(year)
-  sprintf("accident_%d.csv.bz2", year)
+  system.file("extdata",
+              sprintf("accident_%d.csv.bz2", year),
+              package = "farviz",
+              mustWork = TRUE)
 }
-
 #' Selects the data based on 'month' an saves as separate file extension - .csv.bz2 file
 #'
 #' This function uses base R function 'lapply' and also uses function - 'mutate', 'select'
@@ -51,7 +55,8 @@ make_filename <- function(year) {
 #' naming the saved file and finally, selects the 'MONTH' and 'year' column and assigns it to
 #' "dat" object. Returns error if the "year" is not found.
 #'
-#' @importFrom dplyr mutate select
+#' @importFrom dplyr mutate
+#' @importFrom dplyr select
 #' @import magrittr
 #'
 #' @param years  Takes number as input which will be used in formatted string literal.
@@ -74,8 +79,8 @@ fars_read_years <- function(years) {
     file <- make_filename(year)
     tryCatch({
       dat <- fars_read(file)
-      dplyr::mutate(dat, year = year) %>%
-        dplyr::select(MONTH, year)
+      dplyr::mutate_(dat,  year = "YEAR") %>%
+        dplyr::select_("MONTH", "year")
     }, error = function(e) {
       warning("invalid year: ", year)
       return(NULL)
@@ -88,9 +93,11 @@ fars_read_years <- function(years) {
 #' This function uses packages: "dplyr" and "tidyr". It reads the data for specified
 #' year and summarises it, giving various metrics also spreads the data for better visualisation.
 #'
-#' @importFrom dplyr group_by summarize bind_rows
-#' @importFrom tidyr spread
-#' @import magrittr
+#' @importFrom dplyr bind_rows
+#' @importFrom dplyr group_by_
+#' @importFrom dplyr summarize_
+#' @importFrom tidyr spread_
+#' @importFrom magrittr "%>%"
 #'
 #' @inheritParams fars_read_years
 #'
@@ -105,9 +112,9 @@ fars_read_years <- function(years) {
 fars_summarize_years <- function(years) {
   dat_list <- fars_read_years(years)
   dplyr::bind_rows(dat_list) %>%
-    dplyr::group_by(year, MONTH) %>%
-    dplyr::summarize(n = n()) %>%
-    tidyr::spread(year, n)
+    dplyr::group_by_("year", "MONTH") %>%
+    dplyr::summarize_(n = "n()") %>%
+    tidyr::spread_("year", "n")
 }
 
 #' Plots the accidents on a map for specified state and year
@@ -119,8 +126,9 @@ fars_summarize_years <- function(years) {
 #' @param state.num Input is a numerical value which references a state
 #' @param year Input should be numerical value denoting year.
 #'
-#' @importFrom dplyr filter
-#' @import magrittr
+#' @importFrom maps map
+#' @importFrom dplyr filter_
+#' @importFrom graphics points
 #'
 #' @returns It return NULL but plots a map with accidents sites plotted based on the latitude and longitudes.
 #'

@@ -1,6 +1,0 @@
-"0","state_num <- 49 # Utah"
-"0","yr <- 2014"
-"0","fars_map_state(state_num, yr)"
-"2","Error in fars_read(filename) : 
-  file 'accident_2014.csv.bz2' does not exist
-"

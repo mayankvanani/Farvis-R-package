@@ -5,16 +5,16 @@
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "1468939360",
+    "hash" : "0",
     "id" : "E53C1D45",
-    "lastKnownWriteTime" : 1549134688,
-    "last_content_update" : 1549134688606,
+    "lastKnownWriteTime" : 1549302685,
+    "last_content_update" : 1549302685345,
     "path" : "~/Desktop/farviz/vignettes/more_details.Rmd",
     "project_path" : "vignettes/more_details.Rmd",
     "properties" : {
-        "cursorPosition" : "47,24",
-        "last_setup_crc32" : "1972188F9990457b",
-        "scrollLine" : "34"
+        "cursorPosition" : "67,31",
+        "last_setup_crc32" : "",
+        "scrollLine" : "57"
     },
     "relative_order" : 6,
     "source_on_save" : false,
