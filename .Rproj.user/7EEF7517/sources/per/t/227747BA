@@ -5,14 +5,14 @@
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "4209399209",
+    "hash" : "2442111432",
     "id" : "227747BA",
-    "lastKnownWriteTime" : 1549308257,
-    "last_content_update" : 1549308257212,
+    "lastKnownWriteTime" : 1549308503,
+    "last_content_update" : 1549308503743,
     "path" : "~/Desktop/farviz/tests/testthat.R",
     "project_path" : "tests/testthat.R",
     "properties" : {
-        "cursorPosition" : "16,0",
+        "cursorPosition" : "3,20",
         "scrollLine" : "0",
         "tempName" : "Untitled1"
     },

@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1549309410865.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "4218608714",
+    "id" : "64EC454C",
+    "lastKnownWriteTime" : 1549309722,
+    "last_content_update" : 1549309722713,
+    "path" : "~/Desktop/farviz/tests/testthat/test_data_intergrity.R",
+    "project_path" : "tests/testthat/test_data_intergrity.R",
+    "properties" : {
+        "cursorPosition" : "3,0",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 8,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
