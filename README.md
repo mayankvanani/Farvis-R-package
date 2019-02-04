@@ -3,11 +3,11 @@ This is a demo of R package creating and building a distributable. <br/>
 <br/>
 <br/>
 ## About the Creator
-Author : Mayank Vanani
-Date   : 05 Feb '19
-Course : **Building R Packages**
-Specialization: _Mastering Software Development in R_
-Assignment:  Week 4 Final Course Assignment
+Author : Mayank Vanani <br/>
+Date   : 05 Feb '19 <br/>
+Course : **Building R Packages** <br/>
+Specialization: _Mastering Software Development in R_ <br/>
+Assignment:  Week 4 Final Course Assignment <br/>
 <br/>
 <br/>
 ## Farviz
