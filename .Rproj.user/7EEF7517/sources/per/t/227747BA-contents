@@ -12,3 +12,5 @@ data_2 <- fars_summarize_years(2014)$`2014`[2]
 expect_that(data_1 + data_2, equals(4123))
 expect_that(sqrt(3) * sqrt(3), equals(3))
 
+## link to video
+## https://www.youtube.com/watch?v=u2KDSY_8Ay4
