@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1549342812273.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3810532207",
+    "id" : "257D7C6B",
+    "lastKnownWriteTime" : 1549337786,
+    "last_content_update" : 1549337786,
+    "path" : "~/Desktop/My_folder/Farvis-R-package/NAMESPACE",
+    "project_path" : "NAMESPACE",
+    "properties" : {
+    },
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_namespace"
+}

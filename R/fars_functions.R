@@ -14,8 +14,8 @@
 #'         message "file <filename> does not exists".
 #'
 #' @examples
-#' fars_read("fars_data")
-#' fars_read("data/fars_data")
+#' fars_read("inst/extdata/accident_2013.csv.bz2")
+#' fars_read(make_filename(2013))
 #' @export
 
 fars_read <- function(filename) {
