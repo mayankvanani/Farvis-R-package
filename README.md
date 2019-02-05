@@ -1,5 +1,5 @@
 # Farvis-R-package
-[![Build Status](https://travis-ci.org/mayankvanani/Farvis-R-package.svg?branch=master)](https://travis-ci.org/mayankvanani/Farvis-R-package) This is a demo of R package creating and building a distributable.
+[![Build Status](https://travis-ci.org/mayankvanani/Farvis-R-package.svg?branch=master)](https://travis-ci.org/mayankvanani/Farvis-R-package) __This is a demo of R package creating and building a distributable.__
 -----------------------------------------------------------------------------
 
 <br/>
