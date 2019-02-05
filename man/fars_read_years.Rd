@@ -25,7 +25,5 @@ If the specified year is not there in the dataset, It throws a warning: "invalid
 }
 \examples{
 fars_read_years(2015)
-fars_read_years('2015')
-fars_read_years("2015")
 
 }

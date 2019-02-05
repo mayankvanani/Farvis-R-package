@@ -20,6 +20,6 @@ This function check the data is available in the specified directory and
 then imports it to global environment by read it in .CSV format.
 }
 \examples{
-fars_read("fars_data")
-fars_read("data/fars_data")
+fars_read(make_filename(2013))
+
 }

@@ -14,8 +14,8 @@
 #'         message "file <filename> does not exists".
 #'
 #' @examples
-#' fars_read("inst/extdata/accident_2013.csv.bz2")
 #' fars_read(make_filename(2013))
+#'
 #' @export
 
 fars_read <- function(filename) {
@@ -37,9 +37,8 @@ fars_read <- function(filename) {
 #' @return returns formatted string as output.
 #'
 #' @examples
-#' make_file(2019)
-#' make_file('2019')
-#' make_file("2019")
+#' make_filename(2013)
+#'
 #' @export
 make_filename <- function(year) {
   year <- as.integer(year)
@@ -70,8 +69,6 @@ make_filename <- function(year) {
 #'
 #' @examples
 #' fars_read_years(2015)
-#' fars_read_years('2015')
-#' fars_read_years("2015")
 #'
 #' @export
 fars_read_years <- function(years) {
@@ -137,9 +134,7 @@ fars_summarize_years <- function(years) {
 #'  It returns a message "no accidents found" if number of accidents for specified state and year is 0.
 #'
 #' @examples
-#' fars_map_state(1,2015)
-#' fars_map_state('1','2015')
-#' fars_map_state("1","2015")
+#' fars_map_state(12,2015)
 #'
 #' @export
 fars_map_state <- function(state.num, year) {

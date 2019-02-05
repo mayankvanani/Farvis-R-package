@@ -21,8 +21,6 @@ It throws an error if state number is not valid and prints"invalid state number"
  It returns a message "no accidents found" if number of accidents for specified state and year is 0.
 }
 \examples{
-fars_map_state(1,2015)
-fars_map_state('1','2015')
-fars_map_state("1","2015")
+fars_map_state(12,2015)
 
 }

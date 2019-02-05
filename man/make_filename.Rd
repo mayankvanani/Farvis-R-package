@@ -17,7 +17,6 @@ returns formatted string as output.
 This function takes the year as input an prints the formatted string "accident_year.csv.bz2"
 }
 \examples{
-make_file(2019)
-make_file('2019')
-make_file("2019")
+make_filename(2013)
+
 }
